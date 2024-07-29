@@ -404,7 +404,7 @@ def wreck():
 
 # Orrison Cave Boss1 Battle
 def cave_orrison():
-    global key1, boss1, fight
+    global key1, key2, boss1, fight
 
     while boss1:
         clear()
@@ -611,9 +611,9 @@ while run:
             if x > 0:
                 print("4 - WEST")
             if shield_boost >= 0:
-                print("5 - USE MED PEN (25HP)")
+                print("5 - USE SHIELD BOOST (25HP)")
             if ship_repair >= 0:
-                print("6 - USE OXYGEN PEN (50HP)")
+                print("6 - USE SHIP REPAIR (50HP)")
             if biom[map[y][x]]["trader"] or map[y][x] == "wreck" or map[y][x] == "cave_orrison" or map[y][x] == "hurston_jump_point":
                 print("7 - ENTER")
             draw()
